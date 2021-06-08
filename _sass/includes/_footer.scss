@@ -1,7 +1,7 @@
 footer {
   text-align: center;
   padding: 2em 1em 2em 1em;
-  background-color: $ultradgreen;
+  background-color: $blackish;
 }
 
 .bottom-links {
@@ -11,12 +11,12 @@ footer {
   max-width: 65%;
 
   a {
-    color: $lgreen;
+    color: $orange;
     border: 1px solid;
 
     &:hover {
       color: $ultradgreen;
-      background-color: $lgreen;
+      background-color: $orange;
     }
   }
 }

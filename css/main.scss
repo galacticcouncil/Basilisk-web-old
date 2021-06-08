@@ -35,19 +35,23 @@ h6 {
   font-family: "Pexico-regular";
   margin-top: 1rem;
   margin-bottom: 1rem;
-  color: $lgreen;
+  color: $orange;
   text-shadow: 3px 3px 4px rgb(149, 141, 138);
   text-align: center;
+
+  &.outside {
+    text-shadow: 4px 4px 3px rgb(0, 0, 0);
+  }
 }
 
 
 a,
 a:visited {
-  color: $lgreen;
+  color: $orange;
 }
 
 a {
-  color: $lgreen;
+  color: $orange;
   text-decoration: none;
   padding: 0.3em;
   margin: 0.3em;
@@ -55,23 +59,23 @@ a {
   white-space: nowrap;
 
   &.button {
-    border: 1px solid $lgreen;
+    border: 1px solid $orange;
     margin: 5px;
 
     &:hover {
-      background-color: $lgreen;
+      background-color: $orange;
       color: $ultradgreen;
     }
 
     &.inverse {
       margin: 5px;
-      background-color: $lgreen;
+      background-color: $orange;
       color: $ultradgreen;
-      border: 1px solid $lgreen;
+      border: 1px solid $orange;
 
 
       &:hover {
-        color: $lgreen;
+        color: $orange;
         background-color: transparent;
       }
     }
@@ -79,9 +83,11 @@ a {
 }
 
 a:hover {
-  color: $dgreen;
-  border-color: $dgreen;
   outline: none;
+
+  i:before {
+    transform: scale(1.1);
+  }
 }
 
 img {
@@ -91,13 +97,23 @@ img {
 }
 
 .pages {
-  background-image: url("../assets/backgrounds/black-green-snake.png");
   background-size: contain;
+
+  &.bsx {
+    background-image: url("../assets/backgrounds/texture-background-black.png");
+  }
+
+  &.para {
+    background-image: url("../assets/backgrounds/texture-background-orange.png");
+  }
+
+  &.hydr {
+    background-image: url("../assets/backgrounds/texture-background-green.png");
+  }
 
   .page {
     min-height: 600px;
     padding-top: 150px;
-    backdrop-filter: grayscale(1);
 
     &:last-of-type {
       padding-bottom: 75px;
@@ -135,7 +151,7 @@ img {
 
 .box-content {
   background: $textBackground;
-  border: 3px solid $lgreen;
+  border: 3px solid $orange;
   border-radius: 5px;
   padding: 15px;
   height: 100%;
@@ -145,7 +161,7 @@ img {
   }
 
   h3 {
-    color: $lgreen;
+    color: $orange;
   }
 }
 
@@ -162,7 +178,7 @@ img {
 .tagline {
   font-size: 2rem;
   padding-top: 2rem;
-  text-shadow: 2px 2px 3px $lgreen;
+  text-shadow: 2px 2px 3px $orange;
 }
 
 /***
