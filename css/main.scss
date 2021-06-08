@@ -1,0 +1,227 @@
+---
+---
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+@import "includes/vars";
+@import "includes/fonts";
+
+body {
+  margin: 0;
+  background: $blackish;
+  color: #ffffff;
+  line-height: 1.5em;
+  font-size: 1.2em;
+  font-family: "Pexico-micro";
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2.catch {
+  font-size: 2.5em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  font-family: "Pexico-regular";
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: $lgreen;
+  text-shadow: 3px 3px 4px rgb(149, 141, 138);
+  text-align: center;
+}
+
+
+a,
+a:visited {
+  color: $lgreen;
+}
+
+a {
+  color: $lgreen;
+  text-decoration: none;
+  padding: 0.3em;
+  margin: 0.3em;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &.button {
+    border: 1px solid $lgreen;
+    margin: 5px;
+
+    &:hover {
+      background-color: $lgreen;
+      color: $ultradgreen;
+    }
+
+    &.inverse {
+      margin: 5px;
+      background-color: $lgreen;
+      color: $ultradgreen;
+      border: 1px solid $lgreen;
+
+
+      &:hover {
+        color: $lgreen;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+a:hover {
+  color: $dgreen;
+  border-color: $dgreen;
+  outline: none;
+}
+
+img {
+  display: block;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.pages {
+  background-image: url("../assets/backgrounds/black-green-snake.png");
+  background-size: contain;
+
+  .page {
+    min-height: 600px;
+    padding-top: 150px;
+    backdrop-filter: grayscale(1);
+
+    &:last-of-type {
+      padding-bottom: 75px;
+    }
+  }
+}
+
+.inner-content {
+  margin: 0 5%;
+}
+
+.goto {
+  width: 75px;
+  margin: 0 auto;
+
+  a {
+    font-size: 75px;
+    margin: 0;
+    padding: 0;
+
+    i:before {
+      border: 4px solid $blackish;
+      border-radius: 50%;
+    }
+  }
+}
+
+.btn-box {
+  text-align: center;
+}
+
+.row {
+  margin: 50px 0;
+}
+
+.box-content {
+  background: $textBackground;
+  border: 3px solid $lgreen;
+  border-radius: 5px;
+  padding: 15px;
+  height: 100%;
+
+  &.nb {
+    border: none;
+  }
+
+  h3 {
+    color: $lgreen;
+  }
+}
+
+.ltt {
+  float: left;
+  margin-right: 4rem;
+}
+
+.rtt {
+  float: right;
+  margin-left: 4rem;
+}
+
+.tagline {
+  font-size: 2rem;
+  padding-top: 2rem;
+  text-shadow: 2px 2px 3px $lgreen;
+}
+
+/***
+Build page styles
+ */
+#build {
+  .box {
+    img {
+      //removed
+    }
+  }
+}
+
+/***
+Roadmap page styles
+ */
+table.roadmap {
+  opacity: .95;
+}
+
+/***
+HydraDX-Basilisk page styles
+ */
+#hydra-basilisk {
+  .box-content {
+    img {
+      background-color: $imgBackground;
+    }
+  }
+}
+
+/***
+Parachain page styles
+ */
+#parachain {
+  .box-content {
+    height: auto;
+    overflow: hidden;
+
+    img {
+      background-color: $imgBackground;
+    }
+  }
+}
+
+/***
+Crowdloan page styles
+ */
+#crowdloan {
+  .box-content {
+    height: auto;
+    overflow: hidden;
+
+    img {
+      background-color: $imgBackground;
+    }
+  }
+}
+
+@import "includes/header";
+@import "includes/footer";
+@import "includes/mobile-styles";

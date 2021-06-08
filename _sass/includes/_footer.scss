@@ -1,0 +1,22 @@
+footer {
+  text-align: center;
+  padding: 2em 1em 2em 1em;
+  background-color: $ultradgreen;
+}
+
+.bottom-links {
+  line-height: 2.3em;
+  vertical-align: middle;
+  display: inline-block;
+  max-width: 65%;
+
+  a {
+    color: $lgreen;
+    border: 1px solid;
+
+    &:hover {
+      color: $ultradgreen;
+      background-color: $lgreen;
+    }
+  }
+}
